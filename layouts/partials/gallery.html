@@ -1,0 +1,17 @@
+{{ $images := .Page.Resources.Match "img/*.jpg" }}
+{{ with $images }}
+<div class="work-gallery">
+
+    {{ range . }}
+    {{ $image := . }}
+    {{ $imageTN := $image.Resize "1200x" }}
+    
+  <div class="carousel-cell">
+    <img data-flickity-lazyload="{{ $imageTN.RelPermalink }}"  style="max-height: calc(100vh - var(--theme-padding-elements)); width: auto;">
+  </div>
+      
+    {{ end }}
+    </div>
+    
+{{ end }}
+

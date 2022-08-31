@@ -1,0 +1,10 @@
+name = "mbam"
+license = "MIT"
+licenselink = ""
+description = "Minimal Portfolio Theme"
+homepage = ""
+demosite = ""
+author = "Mark Rabanada"
+tags = ["portfolio"]
+features = []
+min_version = "0.20"
